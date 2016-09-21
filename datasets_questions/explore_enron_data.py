@@ -49,3 +49,10 @@ for p in enron_data:
 
 print "Quantified salary: ", salary_count
 print "Known email address: ", email_address
+
+# Finding number of people with no payments
+no_total_payments = 0
+for p in enron_data:
+  if enron_data[p]["total_payments"] == 'NaN':
+    no_total_payments += 1
+print "People not having total payments: ", float(no_total_payments) / len(enron_data) * 100
