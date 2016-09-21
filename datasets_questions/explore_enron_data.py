@@ -31,3 +31,6 @@ print poi_count
 
 # What is the total value of the stock belonging to James Prentice?
 print 'James Prentice stock value: ', enron_data["PRENTICE JAMES"]["total_stock_value"]
+
+# How many email messages do we have from Wesley Colwell to persons of interest?
+print 'Email from Wesley Colwell to POI: ', enron_data["COLWELL WESLEY"]["from_this_person_to_poi"]
