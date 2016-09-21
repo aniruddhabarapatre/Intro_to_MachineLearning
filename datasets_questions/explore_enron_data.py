@@ -37,3 +37,15 @@ print 'Email from Wesley Colwell to POI: ', enron_data["COLWELL WESLEY"]["from_t
 
 # What is the value of stock options exercised by Jeffrey K Skilling?
 print 'Value of stock options by Jeffrey K Skilling: ', enron_data["SKILLING JEFFREY K"]["exercised_stock_options"]
+
+# Finding quantified salary and known email address
+salary_count = 0
+email_address = 0
+for p in enron_data:
+  if enron_data[p]["salary"] != 'NaN':
+    salary_count += 1
+  if enron_data[p]["email_address"] != 'NaN':
+    email_address += 1
+
+print "Quantified salary: ", salary_count
+print "Known email address: ", email_address
