@@ -28,3 +28,6 @@ for p in enron_data:
     poi_count += 1
 
 print poi_count
+
+# What is the total value of the stock belonging to James Prentice?
+print 'James Prentice stock value: ', enron_data["PRENTICE JAMES"]["total_stock_value"]
