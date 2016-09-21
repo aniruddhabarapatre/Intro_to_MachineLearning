@@ -34,3 +34,6 @@ print 'James Prentice stock value: ', enron_data["PRENTICE JAMES"]["total_stock_
 
 # How many email messages do we have from Wesley Colwell to persons of interest?
 print 'Email from Wesley Colwell to POI: ', enron_data["COLWELL WESLEY"]["from_this_person_to_poi"]
+
+# What is the value of stock options exercised by Jeffrey K Skilling?
+print 'Value of stock options by Jeffrey K Skilling: ', enron_data["SKILLING JEFFREY K"]["exercised_stock_options"]
