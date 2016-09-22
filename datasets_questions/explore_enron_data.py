@@ -73,3 +73,7 @@ print "POI with NaN: ", float(count_nan)/count_poi * 100
 print 10 + len(enron_data)
 new_total_payments = 10 + no_total_payments
 print "After adding 10 NaN to Total payments: ", new_total_payments
+
+# What is the new number of POIs in the dataset? What is the new number of POIs with NaN for total_payments?
+print "New POIs: ", 10 + count_poi
+print "New POIs with NaN as total payment: ", 10 + count_nan
