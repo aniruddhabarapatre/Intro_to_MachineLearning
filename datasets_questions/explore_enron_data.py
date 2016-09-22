@@ -27,7 +27,7 @@ for p in enron_data:
   if enron_data[p]["poi"] == True:
     poi_count += 1
 
-print poi_count
+print "POI count: ", poi_count
 
 # What is the total value of the stock belonging to James Prentice?
 print 'James Prentice stock value: ', enron_data["PRENTICE JAMES"]["total_stock_value"]
@@ -56,3 +56,13 @@ for p in enron_data:
   if enron_data[p]["total_payments"] == 'NaN':
     no_total_payments += 1
 print "People not having total payments: ", float(no_total_payments) / len(enron_data) * 100
+
+# Counting POI with NaN
+count_poi = 0
+count_nan = 0
+for k in enron_data:
+  if enron_data[k]['poi'] == True:
+    count_poi += 1
+    if enron_data[k]['total_payments'] == "NaN":
+      count_nan += 1
+print "POI with NaN: ", float(count_nan)/count_poi * 100
