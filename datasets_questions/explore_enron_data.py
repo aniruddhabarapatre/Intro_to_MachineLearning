@@ -66,3 +66,10 @@ for k in enron_data:
     if enron_data[k]['total_payments'] == "NaN":
       count_nan += 1
 print "POI with NaN: ", float(count_nan)/count_poi * 100
+
+# If you added in, say, 10 more data points which were all POIs,
+# and put NaN for the total payments for those folks, the numbers you just calculated would change.
+# What is the new number of people of the dataset? What is the new number of folks with NaN for total payments?
+print 10 + len(enron_data)
+new_total_payments = 10 + no_total_payments
+print "After adding 10 NaN to Total payments: ", new_total_payments
